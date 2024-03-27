@@ -1,10 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#If using termux
-import subprocess
-import shlex
-#end if
-
 
 N = 14
 n = np.arange(N)
