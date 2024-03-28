@@ -24,6 +24,9 @@ cutoff_freq = 4000.0
 # Design Butterworth filter and obtain coefficients
 b, a = signal.butter(order, cutoff_freq / (fs_1 / 2), 'low')
 
+print(a)
+print(b)
+
 # Apply Z-transform to input signal segment 1
 X_z_1 = np.fft.fft(input_signal_segment_1)
 
