@@ -11,7 +11,7 @@ T = 1.0/sampl_freq
 order=4
 
 #cutoff frquency 
-cutoff_freq=1000.0 
+cutoff_freq=4000.0 
 
 #digital frequency
 Wn=2*cutoff_freq/sampl_freq  
@@ -28,7 +28,7 @@ def H(s):
 	return H
 		
 #Input and Output
-analog_f = np.arange(0,10000,100)
+analog_f = np.arange(0,30000,500)
 
 plt.plot(analog_f, (abs(H(1j*analog_f))))
 plt.xlabel('f')
